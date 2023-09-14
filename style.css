@@ -1,13 +1,13 @@
 body{
     padding: 0 30px 0 30px;
-    background-image: url(portf.png);
+    background-image: url(pf.png);
     background-repeat: no-repeat;
     background-position: top;
  padding-top: 0 auto ;
 padding-top: 0 auto;
 }
 
-h1 {
+p {
     margin-top: 50px;
     padding-right: 250px;
     font-size: 20px;
@@ -20,7 +20,7 @@ h1 {
 
 .inline {
     text-align: center;
-    margin-top: 460px;
+    margin-top: 390px;
 }
 
 button{
@@ -41,18 +41,18 @@ button{
 }
 button:hover{
     backdrop-filter: blur(5px);
-background-color: rgba(255, 255, 255, 0.44);
-border-color:rgb(255, 255, 255);
+background-color: rgba(251, 123, 166, 0.226);
+border-color: rgb(248, 88, 141);
 color: rgb(58, 68, 255);
 }
 
 footer{
     font-family: 'Courier New', Courier, monospace;
-    color: #b42f36;
+    color: black;
     padding-left: 215px;
 }
 a{
     text-decoration: none;
     cursor: pointer;
-    color: #b42f36;
+    color: black;
 }
