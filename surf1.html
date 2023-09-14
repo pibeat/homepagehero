@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SurfSCHOOL</title>
+    <style>
+        body {
+            background-image: url(https://res.allmacwallpaper.com/get/macbook-air-wallpapers/Dark-Waters/18700-720.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0px 150px 30px 100px;
+        }
+
+        .dark {
+
+            color: rgba(220, 135, 23, 0.76);
+        }
+
+
+
+        ul {
+
+            list-style: none;
+            padding-left: 0px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: rgba(0, 0, 0, 0.482);
+
+        }
+
+
+        H1 {
+            display: inline;
+            font-family: fantasy;
+            font-weight: lighter;
+            color: black;
+            font-size: 30px;
+        }
+
+        li {
+            display: inline;
+            margin-left: 40PX;
+
+        }
+
+        .photo {
+
+            color: rgb(0, 51, 255);
+            cursor: pointer;
+
+        }
+
+        .photo:hover {
+            color: rgba(255, 166, 0, 0.847);
+            background-color: black;
+            border-radius: 4em;
+        }
+
+
+
+        .text {
+            padding: 10px 30px 40px 30px;
+            background-image: url(https://res.allmacwallpaper.com/get/macbook-air-wallpapers/Dark-Waters/18700-720.jpg);
+            margin: 0 auto;
+            background-repeat: no-repeat;
+            background-size: cover;
+            box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.119);
+            width: 100%;
+        }
+
+
+        h2 {
+            text-align: center;
+            font-weight: lighter;
+            font-family: fantasy;
+            color: rgba(0, 51, 255, 0.581);
+            font-size: 30px;
+        }
+
+        .a {
+            font-weight: lighter;
+            margin-left: 25PX;
+            font-size: 120px;
+        }
+
+        BUTTON {
+            display: block;
+            margin: 0 auto;
+            width: 1150px;
+            height: 30px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: rgba(0, 51, 255, 0.822);
+            font-size: 15PX;
+            background-color: rgba(255, 255, 255, 0.34);
+            border-color: rgba(0, 51, 255, 0.688);
+            border-width: 0.3px;
+            transition: all 0.5s ease-in-out;
+            padding-top: 0%;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: rgba(0, 51, 255, 0.341);
+            cursor: pointer;
+            color: rgba(255, 255, 255, 0.815);
+            border-color: rgba(255, 255, 255, 0.775);
+        }
+
+        footer {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: right;
+            color: rgba(255, 166, 0, 0.74);
+            font-size: 15px;
+            font-weight: lighter;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <div>
+            <ul>
+                <H1>
+                    SURF<strong>SCHOOL</strong>
+                </H1>
+                <LI>
+                    HOME
+                </LI>
+                <a href="file:///C:/Desktop/BASIC%20ADD/FINAL%20PROJECT/surf3.html" style="text-decoration: none">
+                    <LI class="photo">
+                        VISIT US
+                    </LI>
+                </a>
+            </ul>
+            <BR>
+            <BR>
+
+        </div>
+        <section>
+            <div class="text">
+                <BR>
+                <BR>
+                <BR>
+                <BR>
+                <BR>
+                <BR>
+                <BR>
+                <BR>
+                <h2>
+                    <strong class="a">L E A R N </strong>
+
+                    <strong class="a"> H O W </strong>
+
+                    <strong class="a"> T O </strong>
+
+                    <strong class="a"> S U R F </strong>
+                </h2>
+                <BR>
+                <BR>
+                <BR>
+                <BR>
+                <BR>
+                <BR>
+
+                <button>
+                    JOIN US
+                </button>
+            </div>
+        </section>
+        <footer>
+            Coded by Beatrice Pizzi.
+        </footer>
+        <script>
+            function applyToSurf() {
+                let level = prompt("What is your level? (Beginner/Advanced)");
+                let name = prompt("What is your name?");
+                let email = prompt("What is your email?");
+
+
+
+                if (email === "") {
+                    alert("Please enter your data")
+                } else {
+                    alert("Thanks, " + name + ", we will be in touch soon 🏄‍♂️")
+                }
+            }
+            let contactButton = document.querySelector("button");
+            contactButton.addEventListener("click", applyToSurf);
+            function changeColor() {
+                let h2 = document.querySelector("h2");
+
+
+                if (h2.classList.contains("dark")) {
+                    h2.classList.remove("dark");
+                } else {
+                    h2.classList.add("dark");
+                }
+
+            }
+            let button = document.querySelector("button");
+            button.addEventListener("click", changeColor);
+
+
+
+        </script>
+</body>
+
+</html>
